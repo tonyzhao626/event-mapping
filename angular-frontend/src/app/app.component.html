@@ -1,0 +1,22 @@
+<div class="container">
+  <div fxLayout="row wrap">
+    <h1>Flood Event Viewer Coding Challenge</h1>
+    <h2>Cloud to Street</h2>
+  </div>
+
+  <p>
+    Complete instructions for the task can be found
+    <a href="https://github.com/cloudtostreet/fullstack-flood-event-display"
+      >in the GitHub repository</a
+    >.
+  </p>
+
+  <app-autocomplete
+    label="Region"
+    [options]="options"
+    (select)="onSelect($event)"
+  >
+  </app-autocomplete>
+
+  <app-map [events]="eventsSubject.asObservable()"></app-map>
+</div>

@@ -1,0 +1,9 @@
+<!-- This is the actual OpenLayers map element. -->
+<div id="map"></div>
+
+<p>
+  Latitude, longitude:
+  <code *ngIf="hoveredCoordinates">
+    {{ hoveredCoordinates[1] }}, {{ hoveredCoordinates[0] }}
+  </code>
+</p>
