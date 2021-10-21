@@ -1,26 +1,17 @@
-# Cloud to Street Flood Event Mapping Practical Exercise
+# Event Mapping
+Cloud to Street Flood Event Mapping Practical Exercise
 
-## Up and running
+## Running
 
-You'll need the following software to develop the project. If on Windows, we recommend developing under [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
+On Windows, recommend developing under [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
 
-- [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/en/)
-- [Python 3.x](https://www.python.org/downloads/)
-
-Set up your project by running the following commands.
+Set up project by running the following commands.
 
 ```sh
-# Clone the git repository.
-git clone git@github.com:jsninja777/fullstack-flood-event-display.git
-
-# Enter the repository.
-cd fullstack-flood-event-display
-
 # Enter the Django folder.
 cd flood_viewer_project
 
-# If you haven't already, install the virtualenv Python module using Pip. Pip is included with Python since Python 3.4.
+# Install the virtualenv Python module using Pip. Pip is included with Python since Python 3.4.
 python -m pip install virtualenv
 
 # Create a virtual environment.
@@ -47,26 +38,26 @@ cd fullstack-flood-event-display/angular-frontend
 # Install the Node package dependencies with npm install.
 npm install
 
-# You'll also need the Angular command line tools.
+# also need the Angular command line tools.
 npm install -g @angular/cli
 
-# Now run the frontend webserver. Leave the server running as you complete your exercise.
+# Now run the frontend webserver. Leave the server running.
 ng serve
 ```
 
-When you navigate to [localhost:4200/](http://localhost:4200/), you should see the Angular frontend. It looks like this:
+Frontend dashboard at http://localhost:4200.
 
 ![Image of what the frontend should look like when it is first loaded.](./screenshot-frontend.png)
 
-You can also find an interface to the Django backend at [localhost:8000/](http://localhost:8000/). The administrator username and password are both `admin`. Once logged in, it should look like this. Here's where you can create, view, update, and delete database entries.
+An interface to the Django backend at http://localhost:8000/. 
+
+The administrator username and password are both `admin`. Once logged in, it should look like this. 
 
 ![Image of what the backend Django admin page should look like when it is first loaded.](./screenshot-backend.png)
 
-At this point, the page doesn't do much. Four flooded house icons are displayed arbitrarily in the center of Ghana. One southern region of Ghana is highlighted arbitrarily. The region search box doesn't do anything. It's your task to build on top of what's given to turn this into a functional webpage that meets the requirements listed above.
+It can create, view, update, and delete database entries at here.
 
 ## Project structure
-
-To help you get started, let's go over the structure of the repo and some of the most important files.
 
 ```
 .
